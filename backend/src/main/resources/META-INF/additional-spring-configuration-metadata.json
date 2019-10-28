@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "name": "driver",
+      "type": "java.lang.String",
+      "description": "Description for driver."
+    },
+    {
+      "name": "bindr.app.directory",
+      "type": "java.lang.String",
+      "description": "Description for bindr.app.directory."
+    },
+    {
+      "name": "bindr.app.database.name",
+      "type": "java.lang.String",
+      "description": "Description for bindr.app.database.name."
+    },
+    {
+      "name": "connection.name",
+      "type": "java.lang.String",
+      "description": "Description for connection.name."
+    },
+    {
+      "name": "username",
+      "type": "java.lang.String",
+      "description": "Description for username."
+    },
+    {
+      "name": "password",
+      "type": "java.lang.String",
+      "description": "Description for password."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+.bindrs-sidebar {
+  background: $primary-color;
+
+  .bindrs-list {
+    height: 746px;
+    max-height: 746px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+  }
+
+  .brand {
+    font-family: $font-logo;
+    color: $primary-text-color;
+    text-align: center;
+  }
+
+  .bindrs-toolbar {
+    text-align: center;
+
+    .btn-primary {
+      background-color: $secondary-color-dark;
+      border-color: $secondary-color-dark;
+    }
+
+    .btn-primary:hover {
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+
+  .bindr-link {
+    background: $primary-color-dark;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 $primary-color-box-shadow-color;
+    cursor: pointer;
+
+    &:hover {
+      background: $secondary-color-dark;
+      border-color: $secondary-color-dark;
+      box-shadow: 0 0 4px 0 $secondary-color-box-shadow-color;
+
+      .amount {
+        background-color: $secondary-color;
+      }
+    }
+
+    &:active {
+      background: $secondary-color-dark;
+      border-color: $secondary-color-dark;
+      box-shadow: 0 0 4px 0 $secondary-color-box-shadow-color;
+
+      .amount {
+        background-color: $secondary-color;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 80px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+
+    .title {
+      font-size: $sm-font - 0.25;
+      font-family: $font-primary;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      color: $primary-text-color;
+    }
+
+    .description {
+      font-size: $sm-font - 0.3;
+      font-family: $font-secondary;
+      font-weight: $font-weight-regular;
+      color: $primary-text-color;
+      line-height: 16px;
+      height: 16px;
+      overflow: hidden;
+    }
+
+    .amount {
+      font-size: $sm-font - 0.2;
+      font-family: $font-secondary;
+      font-weight: $font-weight-regular;
+      background: $primary-color;
+      color: $primary-text-color;
+      padding: 5px 10px 5px 10px;
+      border-radius: 5px;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .noBindrs {
+    font-size: $sm-font;
+    font-family: $font-primary;
+    font-weight: $font-weight-regular;
+    color: $primary-text-color;
+  }
+}

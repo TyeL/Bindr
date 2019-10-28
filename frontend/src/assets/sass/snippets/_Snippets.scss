@@ -1,0 +1,116 @@
+.snippets-middlebar {
+  background: $background-color-light;
+
+  .snippets-list {
+    height: 746px;
+    max-height: 746px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+  }
+
+  .snippets-toolbar {
+    text-align: center;
+
+    .btn-primary {
+      background-color: $primary-color-dark;
+      border-color: $primary-color-dark;
+    }
+
+    .btn-primary:hover {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  .snippet-link {
+    background: $background-color-accent-color;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 $background-color-accent-color-boxshadow-color;
+    cursor: pointer;
+
+    &:hover {
+      background: $primary-color-dark;
+      border-color: $primary-color-dark;
+      box-shadow: 0 0 4px 0 $primary-color-box-shadow-color;
+
+      .title {
+        color: $primary-text-color;
+      }
+
+      .description {
+        color: $primary-text-color;
+      }
+
+      .snippet-language {
+        color: $primary-text-color;
+      }
+    }
+
+    &:active {
+      background: $primary-color-dark;
+      border-color: $primary-color-dark;
+      box-shadow: 0 0 4px 0 $primary-color-box-shadow-color;
+      color: $primary-text-color;
+
+      .title {
+        color: $primary-text-color;
+      }
+
+      .description {
+        color: $primary-text-color;
+      }
+
+      .snippet-language {
+        color: $primary-text-color;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 120px;
+      min-height: 120px;
+      max-height: 120px;
+    }
+
+    .title {
+      font-size: $sm-font - 0.25;
+      font-family: $font-primary;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      color: $secondary-text-color;
+    }
+
+    .description {
+      font-size: $sm-font - 0.3;
+      font-family: $font-secondary;
+      font-weight: $font-weight-regular;
+      color: $secondary-text-color;
+      line-height: 16px;
+      height: 48px;
+      overflow: hidden;
+    }
+
+    .snippet-language {
+      font-size: $sm-font - 0.2;
+      font-family: $font-secondary;
+      font-weight: $font-weight-xbold;
+      color: $secondary-text-color;
+      text-transform: uppercase;
+      line-height: 16px;
+      height: 16px;
+      overflow: hidden;
+    }
+  }
+
+  .noSnippets {
+    font-size: $sm-font - 0.2;
+    font-family: $font-primary;
+    font-weight: $font-weight-regular;
+    color: $secondary-text-color;
+  }
+}
